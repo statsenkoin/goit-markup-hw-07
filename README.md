@@ -1,25 +1,46 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-    Не проходить валідацію рядок clip-path: inset(100%);
+    base/ — включает глобальные стили, такие как сброс стилей, типография, цвета и т.д.
+    components/ — содержит отдельные компоненты с отдельным файлом .scss для каждого из них.
+    layout/ — содержит стили для основных компонентов макета, таких как хедер, футер, навигация и т.д.
+    pages/ — содержит стили, специфичные для отдельных страниц, если это необходимо.
+    themes/ — стили для разных тем.
+    utils/ — глобальные миксины, функции, вспомогательные селекторы и т.д.
+    vendors/ — стили, миксины и прочее от третьих сторон
+    main.scss — выходной файл, в котором объединяются все стили.
 
-    .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+        // main.scss
+    @import 'base/module';
+    @import 'components/module';
+    @import 'layout/module';
+    @import 'pages/module';
+    @import 'themes/module';
+    @import 'utils/module';
+    @import 'vendors/module';
 
-    white-space: nowrap;
-    clip-path: inset(100%); //Властивість “clip-path” не існує
-    clip: rect(0 0 0 0);    //The property “clip” is deprecated
-    overflow: hidden;
-    }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    75	Властивість “clip-path” не існує : inset(100%)
-    204 Property “fill” doesn't exist.
-        The closest matching property name is “all” : currentColor
-    402 Property “fill” doesn't exist.
-        The closest matching property name is “all” : currentColor
-    433 Property “fill” doesn't exist.
-        The closest matching property name is “all” : currentColor
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
