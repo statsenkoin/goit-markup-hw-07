@@ -19,7 +19,6 @@
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include customTransition(background-color);
 
   &:hover,
@@ -47,16 +46,12 @@
   }
 }
 
-// --------------------------------------------------
-
 .modal-form__btn-submit {
   @extend %button;
   @extend %btn-site-theme;
 
   padding: 10px 52px;
 }
-
-// -------------------------------------------------
 
 .modal__btn-close {
   @extend %button;
@@ -70,7 +65,6 @@
   background-color: $color-bg-primary;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include customTransition(color);
 
   &:hover,
@@ -82,8 +76,6 @@
 .modal__btn-close--icon {
   fill: currentColor;
 }
-
-// --------------------------------------------------
 
 .filter-list__button {
   @extend %button;
@@ -97,9 +89,6 @@
   color: $color-text-title;
   background-color: $color-bg-secondary;
 
-  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  //   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  //   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include customTransition(color, background-color, box-shadow);
 }
 
