@@ -134,6 +134,9 @@ img {
           align-items: center;
   padding-top: 32px;
   padding-bottom: 31px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: inherit;
   -webkit-transition-property: color;
   transition-property: color;
